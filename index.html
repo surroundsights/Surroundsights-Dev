@@ -1,136 +1,22 @@
 <!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="SurroundSights Development – 360°-Visualisierung, individuelle Web- & App-Entwicklung, Automatisierung und technische Prototypen." />
-  <link rel="canonical" href="https://surroundsights.de/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
-  <meta property="og:site_name" content="SurroundSights Development" />
-  <meta property="og:title" content="SurroundSights Development | Digital · Visual · Technisch" />
-  <meta property="og:description" content="360°-Visualisierung, Web- & App-Entwicklung, Automatisierung und technische Prototypen." />
-  <meta property="og:url" content="https://surroundsights.de/" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="theme-color" content="#07110f" />
-  <title>SurroundSights Development | Digital · Visual · Technisch</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <style>
-    :root {
-      --bg:#07110f; --bg2:#0a1714; --panel:#0d1d19; --panel2:#10251f;
-      --text:#f4f7f6; --muted:#9fb1ab; --line:rgba(255,255,255,.10);
-      --accent:#59f5b2; --accent2:#17b982; --shadow:0 22px 60px rgba(0,0,0,.28);
-      --radius:22px; --max:1180px;
-    }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:
-      radial-gradient(circle at 78% 10%,rgba(89,245,178,.12),transparent 24rem),
-      linear-gradient(180deg,var(--bg),#050b0a 70%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
-    a{color:inherit;text-decoration:none} button,input,textarea,select{font:inherit}
-    .wrap{width:min(calc(100% - 34px),var(--max));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(7,17,15,.74);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .navin{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}.brandmark{width:34px;height:34px;border:1px solid rgba(89,245,178,.45);border-radius:10px;display:grid;place-items:center;box-shadow:inset 0 0 24px rgba(89,245,178,.1)}
-    .brandmark:before{content:"";width:14px;height:14px;border:2px solid var(--accent);border-radius:50%;box-shadow:0 0 0 4px rgba(89,245,178,.08)}.brand small{display:block;color:var(--muted);font-weight:600;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase}
-    .links{display:flex;align-items:center;gap:26px;color:#cfe0da;font-size:.94rem}.links a:hover{color:var(--accent)}.menu{display:none;background:transparent;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 10px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:14px;border:1px solid transparent;font-weight:760;cursor:pointer;transition:.2s ease}.btn.primary{background:var(--accent);color:#05110d}.btn.primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(89,245,178,.16)}.btn.ghost{border-color:var(--line);background:rgba(255,255,255,.025)}.btn.ghost:hover{border-color:rgba(89,245,178,.4)}
-    .hero{padding:96px 0 72px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#bff8df;font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;font-weight:800}.eyebrow:before{content:"";width:28px;height:1px;background:var(--accent)}
-    h1{font-size:clamp(3rem,7vw,6.4rem);line-height:.92;margin:18px 0 24px;letter-spacing:-.065em;max-width:900px}.green{color:var(--accent)}.lead{font-size:clamp(1.05rem,2vw,1.26rem);color:var(--muted);max-width:670px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.micro{margin-top:22px;color:#789089;font-size:.86rem}
-    .visual{position:relative;min-height:470px;border:1px solid var(--line);border-radius:32px;background:linear-gradient(160deg,rgba(89,245,178,.07),rgba(255,255,255,.02));overflow:hidden;box-shadow:var(--shadow)}.gridlines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(to bottom,black,transparent)}
-    .orb{position:absolute;border-radius:50%;border:1px solid rgba(89,245,178,.28)}.orb.a{width:300px;height:300px;right:-60px;top:30px}.orb.b{width:190px;height:190px;right:0;top:85px}.orb.c{width:90px;height:90px;right:50px;top:135px;background:rgba(89,245,178,.08);box-shadow:0 0 90px rgba(89,245,178,.15)}.codecard{position:absolute;left:28px;right:28px;bottom:28px;padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(5,12,10,.76);backdrop-filter:blur(14px)}.codehead{display:flex;gap:6px;margin-bottom:14px}.dot{width:8px;height:8px;border-radius:50%;background:#4a5d56}.code{font:600 .82rem/1.8 ui-monospace,SFMono-Regular,Menlo,monospace;color:#a7bcb4}.code b{color:var(--accent);font-weight:700}
-    section{padding:84px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,5vw,3.5rem);line-height:1;margin:0;letter-spacing:-.04em}.section-head p{color:var(--muted);max-width:540px;margin:0}
-    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.014));transition:.25s ease}.card:hover{transform:translateY(-4px);border-color:rgba(89,245,178,.28)}.icon{width:44px;height:44px;border-radius:12px;background:rgba(89,245,178,.10);display:grid;place-items:center;color:var(--accent);font-weight:900;margin-bottom:40px}.card h3{margin:0 0 10px;font-size:1.12rem}.card p{color:var(--muted);font-size:.93rem;margin:0}
-    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:26px;border-top:1px solid var(--line)}.num{font-size:.75rem;color:var(--accent);letter-spacing:.18em;font-weight:800}.step h3{font-size:1.5rem;margin:14px 0 8px}.step p{color:var(--muted);margin:0}
-    .project{display:grid;grid-template-columns:1fr 1fr;gap:20px}.projectbox{min-height:320px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,#0d1f1a,#09130f);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}.projectbox:before{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(89,245,178,.16);border-radius:50%;right:-60px;top:-45px}.tag{align-self:flex-start;border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:#b9cbc5;font-size:.74rem;margin-bottom:auto}.projectbox h3{font-size:1.75rem;margin:18px 0 8px}.projectbox p{color:var(--muted);max-width:500px;margin:0}
-    .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}.about p{color:var(--muted);font-size:1.05rem;margin-top:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}.stat{border:1px solid var(--line);border-radius:16px;padding:18px}.stat strong{display:block;font-size:1.25rem}.stat span{color:var(--muted);font-size:.8rem}
-    .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;border:1px solid var(--line);border-radius:30px;padding:clamp(24px,4vw,46px);background:linear-gradient(135deg,rgba(89,245,178,.08),rgba(255,255,255,.018))}.contact h2{font-size:clamp(2.2rem,5vw,4rem);line-height:1;margin:0 0 18px}.contact p{color:var(--muted)}form{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-size:.78rem;color:#a9bbb5;display:grid;gap:7px}.full{grid-column:1/-1}input,textarea,select{width:100%;border:1px solid var(--line);background:#07110f;color:var(--text);border-radius:12px;padding:13px 14px;outline:none}input:focus,textarea:focus,select:focus{border-color:rgba(89,245,178,.5)}textarea{min-height:120px;resize:vertical}
-    footer{border-top:1px solid var(--line);padding:26px 0 42px;color:#7d928b;font-size:.84rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footlinks{display:flex;gap:18px}.foot a:hover{color:var(--text)}
-    .reveal{opacity:0;transform:translateY(14px);transition:.55s ease}.reveal.show{opacity:1;transform:none}
-    @media(max-width:900px){.hero-grid,.about,.contact{grid-template-columns:1fr}.visual{min-height:380px}.cards{grid-template-columns:1fr 1fr}.project{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:16px}.links{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:flex-start;padding:22px;background:#081310;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}}
-    @media(max-width:620px){.hero{padding-top:66px}.cards,.process,.stats,form{grid-template-columns:1fr}.visual{min-height:330px}.codecard{left:18px;right:18px;bottom:18px}.full{grid-column:auto}.contact{padding:22px}.brand span:last-child{font-size:.9rem}}
-  </style>
-</head>
-<body>
-  <nav class="nav">
-    <div class="wrap navin">
-      <a class="brand" href="#top" aria-label="SurroundSights Development Startseite">
-        <span class="brandmark" aria-hidden="true"></span>
-        <span>SurroundSights <small>Development</small></span>
-      </a>
-      <button class="menu" aria-label="Menü öffnen">Menü</button>
-      <div class="links">
-        <a href="#leistungen">Leistungen</a><a href="#projekte">Projekte</a><a href="#ablauf">Ablauf</a><a href="#ueber">Über uns</a><a href="#kontakt">Kontakt</a>
-      </div>
-    </div>
-  </nav>
-
-  <main id="top">
-    <header class="hero">
-      <div class="wrap hero-grid">
-        <div class="reveal">
-          <span class="eyebrow">Digital · Visual · Technisch</span>
-          <h1>Ideen werden<br><span class="green">sichtbar.</span></h1>
-          <p class="lead">SurroundSights Development verbindet digitale Entwicklung, technische Visualisierung und praxisnahe Lösungen – vom ersten Konzept bis zum funktionierenden Ergebnis.</p>
-          <div class="actions"><a class="btn primary" href="#kontakt">Projekt anfragen →</a><a class="btn ghost" href="#leistungen">Leistungen ansehen</a></div>
-          <div class="micro">Individuell entwickelt · klare Kommunikation · skalierbar aufgebaut</div>
-        </div>
-        <div class="visual reveal" aria-label="Technische Visualisierung">
-          <div class="gridlines"></div><div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
-          <div class="codecard"><div class="codehead"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="code">project = <b>"SurroundSights"</b><br>idea → prototype → <b>solution</b><br>status: <b>ready_to_build();</b></div></div>
-        </div>
-      </div>
-    </header>
-
-    <section id="leistungen">
-      <div class="wrap">
-        <div class="section-head reveal"><div><span class="eyebrow">Leistungen</span><h2>Von der Idee bis zur Lösung.</h2></div><p>Modular aufgebaut: einzelne Leistungen oder komplette Projekte aus einer Hand.</p></div>
-        <div class="cards">
-          <article class="card reveal"><div class="icon">360°</div><h3>360° & Visualisierung</h3><p>Virtuelle Rundgänge, räumliche Darstellung und digitale Präsentationen für Immobilien, Unternehmen und Projekte.</p></article>
-          <article class="card reveal"><div class="icon">&lt;/&gt;</div><h3>Web & App Development</h3><p>Individuelle Weboberflächen, Dashboards und kleine Business-Tools mit Fokus auf Bedienbarkeit und klare Prozesse.</p></article>
-          <article class="card reveal"><div class="icon">⚙</div><h3>Automation & Tools</h3><p>Digitale Werkzeuge zur Vereinfachung wiederkehrender Abläufe, Datenerfassung, Planung und Dokumentation.</p></article>
-          <article class="card reveal"><div class="icon">3D</div><h3>CAD & Prototyping</h3><p>Konzeptentwicklung, CAD-nahe Lösungen und 3D-Prototypen für technische Anwendungen und individuelle Bauteile.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projekte">
-      <div class="wrap">
-        <div class="section-head reveal"><div><span class="eyebrow">Projekte</span><h2>Praktisch statt theoretisch.</h2></div><p>Die Bereiche unten sind als echte Referenzflächen vorbereitet. Hier können später Screenshots, Videos und Projektbeschreibungen ergänzt werden.</p></div>
-        <div class="project">
-          <article class="projectbox reveal"><span class="tag">DIGITAL EXPERIENCE</span><h3>Virtuelle Räume & 360°</h3><p>Immersive Darstellung für Orte, Räume und Präsentationen – erreichbar über Browser, Smartphone und Desktop.</p></article>
-          <article class="projectbox reveal"><span class="tag">CUSTOM DEVELOPMENT</span><h3>Individuelle Business-Tools</h3><p>Webbasierte Anwendungen für Planung, Bestand, Auswertung und technische Workflows.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="ablauf">
-      <div class="wrap">
-        <div class="section-head reveal"><div><span class="eyebrow">Ablauf</span><h2>Einfach. Transparent. Iterativ.</h2></div></div>
-        <div class="process"><article class="step reveal"><span class="num">01 · VERSTEHEN</span><h3>Ziel definieren</h3><p>Anforderung, Nutzer und gewünschtes Ergebnis werden klar abgegrenzt.</p></article><article class="step reveal"><span class="num">02 · BAUEN</span><h3>Prototyp erstellen</h3><p>Früh eine funktionierende Version sehen, testen und gezielt verbessern.</p></article><article class="step reveal"><span class="num">03 · AUSLIEFERN</span><h3>Produktiv einsetzen</h3><p>Saubere Übergabe, Veröffentlichung und auf Wunsch weitere Entwicklung.</p></article></div>
-      </div>
-    </section>
-
-    <section id="ueber">
-      <div class="wrap about">
-        <div class="reveal"><span class="eyebrow">SurroundSights Development</span><h2 style="font-size:clamp(2.2rem,5vw,4rem);line-height:1;letter-spacing:-.045em;margin:18px 0">Technik mit Blick fürs Ganze.</h2></div>
-        <div class="reveal"><p>Der Ansatz: technische Anforderungen verstehen, unnötige Komplexität vermeiden und Lösungen bauen, die im Alltag tatsächlich funktionieren. SurroundSights Development ist bewusst flexibel aufgestellt – zwischen Visualisierung, Software und technischem Prototyping.</p><div class="stats"><div class="stat"><strong>Modular</strong><span>Leistungen kombinierbar</span></div><div class="stat"><strong>Responsive</strong><span>für Desktop & Mobile</span></div><div class="stat"><strong>Direkt</strong><span>kurze Wege im Projekt</span></div></div></div>
-      </div>
-    </section>
-
-    <section id="kontakt">
-      <div class="wrap contact reveal">
-        <div><span class="eyebrow">Kontakt</span><h2>Projekt im Kopf?</h2><p>Beschreibe kurz, was du vorhast. Der Button erstellt daraus direkt eine vorbereitete E-Mail.</p><p style="font-size:.84rem">E-Mail: <a href="mailto:surroundsights360@gmail.com" style="color:var(--accent)">surroundsights360@gmail.com</a></p></div>
-        <form id="contactForm"><label>Name<input required name="name" placeholder="Dein Name"></label><label>E-Mail<input required type="email" name="email" placeholder="name@beispiel.de"></label><label class="full">Leistung<select name="service"><option>Web / App Development</option><option>360° / Visualisierung</option><option>Automation / Business Tool</option><option>CAD / 3D / Prototyping</option><option>Sonstiges</option></select></label><label class="full">Projekt<textarea required name="message" placeholder="Worum geht es?"></textarea></label><div class="full"><button class="btn primary" type="submit">Anfrage vorbereiten →</button></div></form>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="wrap foot"><div>© <span id="year"></span> SurroundSights Development</div><div class="footlinks"><a href="impressum.html">Impressum</a></div></div></footer>
-
-  <script>
-    const CONTACT_EMAIL = 'surroundsights360@gmail.com';
-    const menu=document.querySelector('.menu'),links=document.querySelector('.links');
-    menu.addEventListener('click',()=>links.classList.toggle('open')); links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-    document.getElementById('year').textContent=new Date().getFullYear();
-    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-    document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.currentTarget);const subject=encodeURIComponent('Projektanfrage – '+f.get('service'));const body=encodeURIComponent(`Name: ${f.get('name')}\nE-Mail: ${f.get('email')}\nLeistung: ${f.get('service')}\n\nProjekt:\n${f.get('message')}`);location.href=`mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;});
-  </script>
-</body>
-</html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="SurroundSights Development aus Lauf: Unternehmenswebsites, Social Media, Meta & Google Ads, Web-Apps, Automatisierung, 360°-Visualisierung, CAD, IoT und technische Lösungen."><link rel="canonical" href="https://surroundsights.de/"><meta name="theme-color" content="#081712"><meta property="og:type" content="website"><meta property="og:site_name" content="SurroundSights Development"><meta property="og:title" content="SurroundSights Development | Web, Marketing, 360° & technische Lösungen"><meta property="og:description" content="SurroundSights Development aus Lauf: Unternehmenswebsites, Social Media, Meta & Google Ads, Web-Apps, Automatisierung, 360°-Visualisierung, CAD, IoT und technische Lösungen."><title>SurroundSights Development | Web, Marketing, 360° & technische Lösungen</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/styles.css"></head><body><a class="skip" href="#content">Zum Inhalt</a><div class="topbar"><div class="wrap"><span>SurroundSights Development · Digital · Visual · Technisch</span><span><a href="mailto:surroundsights360@gmail.com">surroundsights360@gmail.com</a></span></div></div><header class="site-header"><div class="wrap nav"><a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" alt=""><span class="brand-text">SurroundSights<small>Development</small></span></a><button class="menu-btn" type="button" aria-expanded="false" aria-label="Navigation öffnen">Menü</button><nav class="navlinks" aria-label="Hauptnavigation"><a href="index.html" aria-current="page">Start</a><a href="leistungen.html">Leistungen</a><a href="online-marketing.html">Online-Marketing</a><a href="entwicklung.html">Development</a><a href="visualisierung-technik.html">360° & Technik</a><a href="kontakt.html">Kontakt</a><a class="nav-cta" href="kontakt.html">Projekt anfragen</a></nav></div></header><main id="content">
+<section class="hero"><div class="wrap hero-grid"><div class="hero-copy reveal"><span class="eyebrow">Full-Service für digitale & technische Projekte</span><h1>Wir machen Ideen <span class="display-line">sichtbar. digital. wirksam.</span></h1><p class="lead">Von der Unternehmenswebsite über Social Media und Onlinewerbung bis zu individuellen Web-Apps, 360°-Rundgängen, Automatisierung und technischen Prototypen: SurroundSights Development verbindet kreative Umsetzung mit technischem Verständnis.</p><div class="actions"><a class="btn btn--primary" href="kontakt.html">Projekt besprechen →</a><a class="btn btn--ghost" href="leistungen.html">Alle Leistungen</a></div><div class="hero-meta"><span><i></i> Direkt & persönlich</span><span><i></i> Mobile-first</span><span><i></i> Individuell statt Baukasten</span></div></div><div class="hero-visual reveal"><img src="assets/img/hero-studio.svg" alt="Illustration aus Website, Smartphone, 360 Grad und technischen Elementen"><div class="hero-badge">Build · Market · Automate<small>alles aus einer Hand</small></div></div></div></section>
+<section class="section section--soft"><div class="wrap intro-split"><div class="reveal"><span class="eyebrow">SurroundSights Development</span></div><div class="reveal"><p class="big-copy">Eine Website allein reicht oft nicht. Wir verbinden <strong>Webdesign, Content, Werbung, Software und Technik</strong> zu Lösungen, die im Alltag funktionieren und mit Ihrem Unternehmen wachsen.</p><p>Für kleine Unternehmen, lokale Betriebe und individuelle technische Projekte – von der ersten Idee bis zur Veröffentlichung und laufenden Betreuung.</p></div></div></section>
+<section class="section"><div class="wrap"><div class="intro-split" style="margin-bottom:42px"><div><span class="eyebrow">Was wir tun</span><h2>Leistungen ohne Agentur-Umwege.</h2></div><p>Ein Ansprechpartner für digitale Präsenz, Kampagnen, Software und technische Umsetzung. Leistungen können einzeln gebucht oder sinnvoll kombiniert werden.</p></div><div class="service-grid">
+<a class="service-card featured reveal" href="online-marketing.html"><div class="service-icon">01</div><h3>Unternehmenswebsite</h3><p>Responsive Website, Inhalte, Kontakt, grundlegendes SEO, Veröffentlichung sowie optionale Pflege.</p><span class="more">ab 1.690 € →</span></a>
+<a class="service-card reveal" href="online-marketing.html"><div class="service-icon">02</div><h3>Social Media Betreuung</h3><p>Instagram & Facebook mit Bildbeiträgen, Story-Motiven, Texten, Veröffentlichung und Monatsauswertung.</p><span class="more">ab 449 €/Monat →</span></a>
+<a class="service-card reveal" href="online-marketing.html"><div class="service-icon">03</div><h3>Meta & Google Ads</h3><p>Lokale Kampagnen, Zielgruppen, Keywords, Anzeigenvarianten, Kontrolle, Optimierung und Reporting.</p><span class="more">ab 199 €/Monat →</span></a>
+<a class="service-card reveal" href="entwicklung.html"><div class="service-icon">04</div><h3>Web-Apps & Dashboards</h3><p>Individuelle Tools, PWAs, Benutzeroberflächen, Datenmodelle und praxisnahe Business-Anwendungen.</p><span class="more">Mehr erfahren →</span></a>
+<a class="service-card reveal" href="entwicklung.html"><div class="service-icon">05</div><h3>Automation & Integrationen</h3><p>Workflows, APIs, Datenimporte, Kalender-/E-Mail-Integration und automatisierte Abläufe.</p><span class="more">Mehr erfahren →</span></a>
+<a class="service-card reveal" href="visualisierung-technik.html"><div class="service-icon">06</div><h3>360° & Visualisierung</h3><p>360°-Aufnahmen, virtuelle Rundgänge, Hotspots, digitale Objektpräsentation und Website-Integration.</p><span class="more">Mehr erfahren →</span></a>
+<a class="service-card reveal" href="visualisierung-technik.html"><div class="service-icon">07</div><h3>CAD, 3D & Prototyping</h3><p>Konstruktion, 3D-Modelle, Druckvorbereitung, Prototypen, technische Zeichnungen und Fertigung.</p><span class="more">Mehr erfahren →</span></a>
+<a class="service-card reveal" href="visualisierung-technik.html"><div class="service-icon">08</div><h3>IoT, Sensorik & ESP32</h3><p>Sensorlösungen, Mikrocontroller, Prototyp-Aufbau, Firmware, Messdaten und technische Dokumentation.</p><span class="more">Mehr erfahren →</span></a>
+<a class="service-card reveal" href="visualisierung-technik.html"><div class="service-icon">09</div><h3>Kamera- & Systemplanung</h3><p>Sichtfelder, Grundrisse, Komponenten, Verkabelung, PoE und technische Inbetriebnahme.</p><span class="more">Mehr erfahren →</span></a>
+</div></div></section>
+<section class="section section--soft"><div class="wrap visual-split"><div class="visual-copy reveal"><span class="eyebrow">Website + Social + Ads</span><h2>Eine digitale Präsenz, die zusammenpasst.</h2><p>Website, Social Media und Werbekampagnen werden nicht als drei getrennte Baustellen behandelt. Gestaltung, Botschaft und Zielgruppe greifen ineinander.</p><ul class="checklist"><li>Unternehmenswebsite bis zu fünf Inhaltsseiten</li><li>Instagram & Facebook – Einrichtung und laufender Content</li><li>Meta Ads für lokale Reichweite und Anfragen</li><li>Google Ads für gezielte Suchanfragen</li><li>Websitepflege und monatliche Kampagnenoptimierung</li></ul><div class="actions"><a class="btn btn--primary" href="online-marketing.html">Paket & Preise ansehen</a></div></div><div class="visual-media reveal"><img src="assets/img/marketing-package.svg" alt="Illustration einer Website, eines Social-Media-Feeds und eines Marketing-Pakets"></div></div></section>
+<div class="band"><div class="wrap"><strong>Einmaliges Komplettpaket: 2.687 €</strong><a class="btn" href="online-marketing.html#preise">Leistungsumfang ansehen →</a></div></div>
+<section class="section"><div class="wrap visual-split reverse"><div class="visual-copy reveal"><span class="eyebrow">Development</span><h2>Wenn Standardsoftware nicht zum Prozess passt.</h2><p>Wir entwickeln kleine bis mittlere Web-Tools, Dashboards und Automatisierungen für konkrete Abläufe – von Datenerfassung und Planung bis zu Schnittstellen und Auswertung.</p><div class="pill-row"><span class="pill">Web-App / PWA</span><span class="pill">Dashboard</span><span class="pill">API</span><span class="pill">CSV / Excel</span><span class="pill">Automation</span><span class="pill">IoT-Daten</span></div><a class="btn btn--ghost" href="entwicklung.html">Development entdecken →</a></div><div class="visual-media reveal"><img src="assets/img/automation.svg" alt="Illustration eines automatisierten Daten-Workflows"></div></div></section>
+<section class="section section--dark"><div class="wrap visual-split"><div class="visual-copy reveal"><span class="eyebrow">360° & Technik</span><h2>Digital zeigen. Technisch lösen.</h2><p>Virtuelle Rundgänge für Räume und Unternehmen treffen auf CAD, 3D-Druck, Sensorik und technische Systemplanung.</p><ul class="checklist"><li>360°-Aufnahme & virtueller Rundgang</li><li>CAD-Konstruktion & 3D-Prototypen</li><li>ESP32, Sensorik & Firmware</li><li>Kamera-, Sichtfeld- und Verkabelungsplanung</li><li>Inbetriebnahme & technische Dokumentation</li></ul><div class="actions"><a class="btn btn--lime" href="visualisierung-technik.html">Technische Leistungen →</a></div></div><div class="visual-media reveal"><img src="assets/img/engineering.svg" alt="Illustration von CAD-Modell und IoT-Sensorik"></div></div></section>
+<section class="section"><div class="wrap"><div class="intro-split" style="margin-bottom:42px"><div><span class="eyebrow">Zusammenarbeit</span><h2>Von der Idee bis zum Betrieb.</h2></div><p>Klare Abstimmung, eine nachvollziehbare Leistung und möglichst wenig Reibungsverluste. Sie behalten Ihre Konten, Zugänge und Daten.</p></div><div class="process"><div class="step"><span class="step-num">01 · Verstehen</span><h3>Ziele & Anforderungen</h3><p>Wir klären Zielgruppe, technische Anforderungen, vorhandene Systeme und Prioritäten.</p></div><div class="step"><span class="step-num">02 · Konzipieren</span><h3>Struktur & Angebot</h3><p>Leistungsumfang, Zeitplan, Budget und Zuständigkeiten werden transparent festgelegt.</p></div><div class="step"><span class="step-num">03 · Umsetzen</span><h3>Design & Entwicklung</h3><p>Die Lösung wird erstellt, getestet und in einer gebündelten Korrekturphase abgestimmt.</p></div><div class="step"><span class="step-num">04 · Betreiben</span><h3>Launch & Betreuung</h3><p>Veröffentlichung, Übergabe sowie auf Wunsch laufende Pflege, Content und Kampagnen.</p></div></div></div></section>
+<section class="section section--tight"><div class="wrap cta reveal"><div class="cta-inner"><div><span class="eyebrow">Projekt starten</span><h2>Was möchten Sie sichtbar machen?</h2><p>Schildern Sie kurz Ihr Vorhaben. Sie erhalten eine klare Rückmeldung, welche Lösung sinnvoll ist und welche nächsten Schritte nötig sind.</p></div><a class="btn" href="kontakt.html">Projekt anfragen →</a></div></div></section>
+</main><footer><div class="wrap"><div class="footer-grid"><div><div class="footer-brand"><img src="assets/img/logo-mark.svg" alt=""><strong>SurroundSights Development</strong></div><p>Websites, Online-Marketing, Social Media, Ads, individuelle Software, 360°-Visualisierung und technische Entwicklung – mit einem direkten Ansprechpartner.</p></div><div><div class="footer-title">Leistungen</div><div class="footer-links"><a href="online-marketing.html">Website & Online-Marketing</a><a href="entwicklung.html">Web-Apps & Automatisierung</a><a href="visualisierung-technik.html">360° & technische Lösungen</a><a href="leistungen.html">Alle Leistungen</a></div></div><div><div class="footer-title">Kontakt</div><div class="footer-links"><a href="mailto:surroundsights360@gmail.com">surroundsights360@gmail.com</a><a href="kontakt.html">Projektanfrage</a><a href="impressum.html">Impressum</a></div></div></div><div class="footer-bottom"><span>© <span data-year></span> SurroundSights Development</span><span>Inh. Sebastian Kolb · 77886 Lauf</span></div></div></footer><script src="assets/js/main.js"></script></body></html>
