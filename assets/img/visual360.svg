@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="t"><title id="t">Original Illustration für 360 Grad Visualisierung</title>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8EDBC1"/><stop offset="1" stop-color="#E9F1E7"/></linearGradient></defs>
+<rect width="1000" height="720" rx="42" fill="#081712"/>
+<rect x="80" y="90" width="840" height="500" rx="36" fill="url(#sky)"/>
+<path d="M80 415C210 345 310 360 430 408s235 48 490-35v217H80z" fill="#637E6E"/>
+<path d="M80 480C230 428 350 463 474 506s257 12 446-39v123H80z" fill="#284A3C"/>
+<path d="M260 405l110-136 102 136z" fill="#F6F4ED"/><rect x="304" y="405" width="124" height="108" fill="#EEEBDD"/><rect x="331" y="438" width="41" height="75" fill="#17352B"/>
+<g transform="translate(655 240)"><circle cx="95" cy="95" r="82" fill="none" stroke="#B5FF3D" stroke-width="8"/><path d="M23 95h144M95 23v144" stroke="#B5FF3D" stroke-width="3" opacity=".45"/><circle cx="95" cy="95" r="14" fill="#081712"/><text x="95" y="220" text-anchor="middle" fill="#081712" font-size="38" font-family="system-ui,sans-serif" font-weight="850">360°</text></g>
+<g transform="translate(106 112)"><rect width="214" height="60" rx="30" fill="#081712" opacity=".94"/><circle cx="33" cy="30" r="10" fill="#B5FF3D"/><text x="58" y="38" fill="#F6F4ED" font-family="system-ui,sans-serif" font-size="18" font-weight="700">VIRTUAL TOUR</text></g>
+</svg>

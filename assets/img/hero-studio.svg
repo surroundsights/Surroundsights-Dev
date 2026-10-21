@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="t d"><title id="t">Digitale Agentur Visualisierung</title><desc id="d">Eigenständige Illustration aus Website, Smartphone, Diagrammen, 360 Grad und technischen Elementen</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d2a21"/><stop offset="1" stop-color="#07110e"/></linearGradient>
+ <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B5FF3D"/><stop offset="1" stop-color="#51E4A6"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-opacity=".25"/></filter>
+</defs>
+<rect width="1200" height="820" rx="48" fill="url(#bg)"/>
+<g opacity=".12" stroke="#F6F4ED"><path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200M0 600h1200M0 720h1200"/><path d="M120 0v820M240 0v820M360 0v820M480 0v820M600 0v820M720 0v820M840 0v820M960 0v820M1080 0v820"/></g>
+<circle cx="1020" cy="120" r="220" fill="#B5FF3D" opacity=".08"/><circle cx="180" cy="720" r="170" fill="#51E4A6" opacity=".08"/>
+<g filter="url(#shadow)" transform="translate(90 130)">
+ <rect x="0" y="0" width="650" height="430" rx="28" fill="#F6F4ED"/>
+ <rect x="0" y="0" width="650" height="62" rx="28" fill="#EAE7DC"/>
+ <circle cx="34" cy="31" r="7" fill="#17352B" opacity=".28"/><circle cx="58" cy="31" r="7" fill="#17352B" opacity=".18"/><circle cx="82" cy="31" r="7" fill="#17352B" opacity=".12"/>
+ <rect x="42" y="104" width="230" height="28" rx="14" fill="#081712"/><rect x="42" y="151" width="355" height="16" rx="8" fill="#63716A" opacity=".45"/><rect x="42" y="179" width="310" height="16" rx="8" fill="#63716A" opacity=".32"/>
+ <rect x="42" y="232" width="160" height="48" rx="14" fill="url(#lime)"/>
+ <rect x="412" y="96" width="190" height="176" rx="24" fill="#0D7C59"/>
+ <circle cx="507" cy="184" r="58" fill="none" stroke="#B5FF3D" stroke-width="12" stroke-dasharray="145 220" transform="rotate(-90 507 184)"/>
+ <rect x="42" y="334" width="560" height="1" fill="#CCD0C9"/><rect x="42" y="360" width="118" height="26" rx="8" fill="#DDE1DA"/><rect x="177" y="360" width="118" height="26" rx="8" fill="#DDE1DA"/><rect x="312" y="360" width="118" height="26" rx="8" fill="#DDE1DA"/>
+</g>
+<g filter="url(#shadow)" transform="translate(765 210)">
+ <rect width="260" height="500" rx="42" fill="#111D19" stroke="#4D6F61" stroke-width="2"/>
+ <rect x="18" y="18" width="224" height="464" rx="30" fill="#F6F4ED"/>
+ <rect x="86" y="30" width="88" height="9" rx="5" fill="#0d2a21" opacity=".2"/>
+ <rect x="40" y="82" width="130" height="18" rx="9" fill="#081712"/><rect x="40" y="116" width="170" height="11" rx="6" fill="#63716A" opacity=".4"/>
+ <rect x="40" y="162" width="170" height="120" rx="20" fill="#0D7C59"/>
+ <path d="M58 247l38-36 30 22 50-52 16 13" fill="none" stroke="#B5FF3D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ <rect x="40" y="316" width="170" height="18" rx="9" fill="#081712" opacity=".85"/><rect x="40" y="350" width="142" height="11" rx="6" fill="#63716A" opacity=".38"/><rect x="40" y="374" width="158" height="11" rx="6" fill="#63716A" opacity=".28"/>
+ <rect x="40" y="420" width="105" height="34" rx="12" fill="url(#lime)"/>
+</g>
+<g transform="translate(655 70)">
+ <circle cx="100" cy="100" r="78" fill="none" stroke="#B5FF3D" stroke-width="3" opacity=".7"/><circle cx="100" cy="100" r="42" fill="none" stroke="#F6F4ED" stroke-width="3" opacity=".55"/>
+ <path d="M22 100h156M100 22v156" stroke="#F6F4ED" opacity=".2"/><circle cx="100" cy="100" r="8" fill="#B5FF3D"/>
+ <text x="100" y="207" text-anchor="middle" fill="#F6F4ED" font-size="34" font-family="system-ui,sans-serif" font-weight="700">360°</text>
+</g>
+<g transform="translate(880 655)"><rect width="210" height="82" rx="18" fill="#B5FF3D"/><text x="105" y="36" text-anchor="middle" fill="#081712" font-size="18" font-family="system-ui,sans-serif" font-weight="800">BUILD · MARKET</text><text x="105" y="61" text-anchor="middle" fill="#081712" font-size="18" font-family="system-ui,sans-serif" font-weight="800">AUTOMATE</text></g>
+</svg>
