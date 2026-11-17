@@ -1,15 +1,11 @@
-# SurroundSights Development Website
+# SurroundSights Development
 
-Statische, responsive Website für GitHub Pages und die Domain `surroundsights.de`.
+Statische Website für `surroundsights.de`. Die Startseite und die sechs Unterseiten liegen im Hauptordner. Bilder, Schriftdateien und Styles liegen in `assets/`.
 
-## Veröffentlichung
+## GitHub Pages
+
 - Repository: `surroundsights/Surroundsights-Dev`
-- GitHub Pages: Branch `main`, Ordner `/ (root)`
-- Custom Domain: `surroundsights.de`
-- Die Datei `CNAME` ist bereits enthalten.
+- Branch: `Main`, Ordner: `/ (root)`
+- Eigene Domain: `surroundsights.de` (siehe `CNAME`)
 
-## Datenschutzfreundlicher Stand
-Die Seite lädt keine externen Fonts, Bilder, Analyse- oder Werbeskripte. Das Kontaktformular öffnet lediglich eine lokale `mailto:`-E-Mail.
-
-## Bilder
-Alle visuellen Assets unter `assets/img/` sind eigenständig erstellte SVG-Illustrationen und enthalten keine externen Bilddateien.
+Die Website benötigt keinen Build-Schritt. Das Kontaktformular erstellt einen E-Mail-Entwurf im E-Mail-Programm des Besuchers. Die Schriftdateien werden lokal geladen. Ihre Lizenzen liegen in `assets/fonts/`.
